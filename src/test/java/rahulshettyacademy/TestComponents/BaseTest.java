@@ -99,7 +99,7 @@ public class BaseTest {
 		FileUtils.copyFile(source, file);
 		return System.getProperty("user.dir") + "//reports//" + testCaseName + ".png";
 		
-		System.out.println("Base test");
+		
 	}
 	
 	@BeforeMethod(alwaysRun=true)
@@ -118,6 +118,7 @@ public class BaseTest {
 	
 	public void tearDown()
 	{
+		System.out.println("Close driver");
 		driver.close();
 	}
 }
