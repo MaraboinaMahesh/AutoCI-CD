@@ -99,7 +99,7 @@ public class BaseTest {
 		FileUtils.copyFile(source, file);
 		return System.getProperty("user.dir") + "//reports//" + testCaseName + ".png";
 		
-		System.out.println("Base test");
+		
 	}
 	
 	@BeforeMethod(alwaysRun=true)
